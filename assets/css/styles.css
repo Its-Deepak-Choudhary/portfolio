@@ -390,12 +390,12 @@ img {
   line-height: 1.5;
 }
 
-/* ===== WORK ===== */
+/* ===== WORK SECTION ===== */
 .work__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start; /* align text and image at top */
+    align-items: flex-start; 
     gap: 30px;
 }
 
@@ -404,7 +404,7 @@ img {
 }
 
 .work__image {
-    flex: 1 1 40%;
+    flex: 1 1 25%;
     text-align: center;
 }
 
@@ -413,6 +413,22 @@ img {
     max-width: 700px;
     height: 400px;
     border-radius: 8px;
+}
+
+/* Headings and lists spacing */
+.work__text h4 {
+    margin-bottom: 0.25rem; 
+}
+
+.work__text ul {
+    list-style-type: disc;  /* Show bullets */
+    padding-left: 1.5rem;   /* Indent bullets */
+    margin-top: 0.25rem;    /* Reduce gap from heading */
+}
+
+.work__text ul li {
+    margin-bottom: 0.5rem;  /* Space between items */
+    line-height: 1.5;
 }
 
 /* Responsive: stack image below text on small screens */
@@ -430,7 +446,6 @@ img {
         margin-top: 15px;
     }
 }
-
 
 
 /* Responsive tweak for smaller screens 
